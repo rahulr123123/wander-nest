@@ -1,0 +1,170 @@
+.contact-page {
+  font-family: 'Poppins', sans-serif;
+  padding:  1rem;
+}
+
+.contact-hero-new {
+ background: linear-gradient(to right, #b78ce5, #768bbd);
+  color: #fff;
+  text-align: center;
+  padding: 6rem 1rem 4rem;
+  border-radius: 10px;
+}
+
+.contact-hero-overlay h1 {
+  font-size: 2.5rem;
+  
+  font-weight: bold;
+}
+
+.contact-hero-overlay p {
+  font-size: 1.1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-cards-new {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+
+.contact-card {
+  background: url('../assets/bg1.jpeg');
+  padding: 1.5rem;
+  border-radius: 12px;
+  flex: 1 1 220px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.contact-card i {
+  font-size: 2rem;
+  color: #ff5722;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form-wrapper {
+  background: url('src/assets/travel.jpg');
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form-new {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.contact-form-new h2 {
+  text-align: center;
+  color: #ff5722;
+  margin-bottom: 1.5rem;
+}
+
+.form-group-new {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.form-group-new input,
+.form-group-new textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-group-new label {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: #fff;
+  padding: 0 0.3rem;
+  color: #999;
+  font-size: 0.9rem;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.form-group-new input:focus + label,
+.form-group-new input:not(:placeholder-shown) + label,
+.form-group-new textarea:focus + label,
+.form-group-new textarea:not(:placeholder-shown) + label {
+  top: -0.6rem;
+  left: 0.8rem;
+  font-size: 0.75rem;
+  color: #ff5722;
+}
+
+.contact-form-new button {
+  background: #ff5722;
+  border: none;
+  color: #fff;
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+.contact-form-new button:hover {
+  background: #e64a19;
+}
+
+.contact-faq {
+  padding: 2rem;
+  background: #f9f9f9;
+}
+
+.contact-faq h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.faq-item {
+  max-width: 800px;
+  margin: 1rem auto;
+  background: #fff;
+  padding: 1rem 1.5rem;
+  border-left: 5px solid #2575fc;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.faq-item h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .contact-cards-new {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-hero-new {
+    padding: 4rem 1rem 3rem;
+  }
+}

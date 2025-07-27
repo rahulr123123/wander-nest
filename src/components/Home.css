@@ -1,0 +1,283 @@
+@import "tailwindcss";
+
+.home-container {
+  font-family: 'Segoe UI', sans-serif;
+}
+.hero {
+  background: url('/assets/hero.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16rem 1rem;
+  text-align: center;
+  color: white;
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero-content p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 1rem;
+}
+.hero-content button {
+  background: #ff9900;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+section {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.card {
+  background: url('../assets/bg1.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+ 
+  
+
+}
+.card img {
+  width: 100%;
+  border-radius: 5px;
+  height: 70%;
+  
+}
+
+.card h3 {
+  margin: 0.5rem 0;
+}
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+.card h4 {
+  margin-top: 0.5rem;
+  color: #333;
+}
+
+.cta {
+  background: linear-gradient(135deg, #0066ff, #00ccff);
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+.cta-content {
+  max-width: 700px;
+}
+.cta-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+.cta-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+.cta-content ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+.cta-content ul li {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cta-content button {
+  background: white;
+  color: #0066ff;
+  font-weight: bold;
+  padding: 0.9rem 2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+.cta-content button:hover {
+  background: #0066ff;
+  color: white;
+}
+
+
+
+.card button {
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  margin-top: 0.5rem;
+}
+
+.card button:hover {
+  background-color: #e64a19;
+  transform: translateY(-2px);
+}
+
+.card button:active {
+  transform: translateY(0);
+}
+
+.gallery {
+  padding: 3rem 1rem;
+  text-align: center;
+  background: #fff;
+}
+
+.gallery h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #ff5722;
+}
+
+.gallery p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.gallery-overlap-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-overlap-item {
+  flex: 1 1 240px;
+  max-width: 300px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-overlap-item.offset {
+  margin-top: 80px; /* creates the staggered lower start */
+   height: 100%;
+   
+}
+
+.gallery-overlap-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-overlap-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.gallery-overlap-item img:hover {
+  transform: scale(1.05);
+}
+
+
+.tips {
+  padding: 3rem 1rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.tips h2 {
+  font-size: 2rem;
+  color: #ff5722;
+  margin-bottom: 0.5rem;
+}
+
+.tips-subtitle {
+  font-size: 1rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tips-card {
+  background:  #9b9a9a;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.tips-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.tips-card h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.tips-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+
+
+@media (max-width: 768px) {
+  .gallery-overlap-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .gallery-overlap-item.offset {
+    margin-top: 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
